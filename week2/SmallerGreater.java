@@ -1,18 +1,14 @@
-import java.util.*;
+// Smaller and Greater
+// You are given an Array A of size N.
+// Find for how many elements, there is a strictly smaller element and a strictly greater element.
+// Example Input:
+//     A = [1, 2, 3]
 
-public class SmallerGreater{
-    public static void main(String[] args) {
-        ArrayList<Integer> A = new ArrayList<Integer>();
-        Scanner sc = new Scanner(System.in);
-        while(sc.hasNextInt()){
-            int num = sc.nextInt();
-            A.add(num);
-        }
-        System.out.println(Solution.solve(A));
+// Example Output:
+//     1
 
-        
-    }
-}
+// Explanation:
+//     only 2 have a strictly smaller and strictly greater element, 1 and 3 respectively.
 
 class Solution {
     public static int solve(ArrayList<Integer> A) {
